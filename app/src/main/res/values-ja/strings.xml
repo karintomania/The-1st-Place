@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">１位になりたい</string>
+    <string name="MainTitle">１位になりたい</string>
+    <string name="mainStart">start</string>
+    <string name="mainSettings">settings</string>
+    <string name="settingsName">名前</string>
+    <string name="settingsTitle">タイトル</string>
+    <string name="settingsOutstanding">ぶっちぎり率</string>
+    <string name="settingsAuto">AUTO PLAY</string>
+    <string name="settingsSave">SAVE</string>
+    <string name="gameCaption">ボタンを連打!!</string>
+    <string name="gameButton">TAP</string>
+    <string name="gameSwitch">AUTO PLAY</string>
+    <string name="resultHomeButton">HOME</string>
+    <string name="resultShareButton">SHARE</string>
+    <string name="resultShareMessage">{Player}が{Title}で１位を獲得しました。#１位になりたい</string>
+</resources>

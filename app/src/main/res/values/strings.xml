@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">The 1st Place</string>
+    <string name="MainTitle">The 1st Place</string>
+    <string name="mainStart">start</string>
+    <string name="mainSettings">settings</string>
+    <string name="settingsName">Name</string>
+    <string name="settingsTitle">Title</string>
+    <string name="settingsOutstanding">Outstanding Rate</string>
+    <string name="settingsAuto">Auto Play</string>
+    <string name="settingsSave">SAVE</string>
+    <string name="gameCaption">Mash the Button!!</string>
+    <string name="gameButton">TAP</string>
+    <string name="gameSwitch">AUTO PLAY</string>
+    <string name="resultHomeButton">HOME</string>
+    <string name="resultShareButton">SHARE</string>
+    <string name="resultShareMessage">{Player} took 1st place on {Title}.\n#The 1st Place.</string>
+</resources>

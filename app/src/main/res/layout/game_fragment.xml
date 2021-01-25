@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/game">
+    <data>
+        <variable
+            name="viewModel"
+            type="com.bedroomcomputing.tobecomethebest.ui.game.GameViewModel" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="32dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black_60">
+
+
+        <TextView
+            android:id="@+id/text_gameCaption"
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/gameCaption"
+            android:textSize="32sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_gamePoint"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="40dp"
+            android:text="@{viewModel.pointLetter}"
+            style="@style/text"
+            android:textSize="32sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_gameCaption" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_result"
+            style="@style/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:fontFamily="@font/electrolize"
+            android:text="@string/gameButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frame_encourage" />
+
+        <FrameLayout
+            android:id="@+id/frame_encourage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:alpha="0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_gamePoint">
+
+            <ImageView
+                android:id="@+id/imageView_encourageBack"
+                android:layout_width="267dp"
+                android:layout_height="53dp"
+                android:alpha="0.8"
+                app:srcCompat="@drawable/purple" />
+
+            <TextView
+                android:id="@+id/text_encourage"
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Good!!"
+                android:textSize="40sp" />
+        </FrameLayout>
+
+        <Switch
+            android:id="@+id/switch_gameAuto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/electrolize"
+            android:text="@string/gameSwitch"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_result" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+</layout>
